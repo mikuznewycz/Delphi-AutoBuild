@@ -40,10 +40,11 @@ Simple file to build delphi project with CI/CD systems or build without open the
 ![this image will not be displayed](img/BuildWin64.png)
 
 
-# Conclusion 
+# Links  
 
-Now you can use this batch to build executable with CI/CD tool (Jenkins, ...) 
+[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Eurekalog Home Page")
+[Eurekalog](https://www.eurekalog.com/ "Eurekalog Home Page")
+[Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
+[Jenkins](https://www.jenkins.io/ "Jenkins Home Page")
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_MXtbjwsz3A/0.jpg)](https://www.youtube.com/watch?v=_MXtbjwsz3A&t=6s)
-
-[see Jenkins home page](https://www.jenkins.io/ "Jenkins Home Page")
