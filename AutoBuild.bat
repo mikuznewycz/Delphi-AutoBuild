@@ -118,9 +118,9 @@ goto :init
 	IF EXIST %Eurekalog% IF EXIST .\%Module%\%Module%.eof (
 		echo #### Eurekalog
 		IF /i "%OptConfig%"=="Debug" (
-			%Eurekalog% --el_nostats --el_alter_exe=.\%Module%\%Module%.dproj;.\_Executables\%Module%\%Module%.exe --el_config=.\PARTAGE\_EurekaLog\7_5_MemLeaks.eof || GOTO error
+			%Eurekalog% --el_nostats --el_alter_exe=.\%Module%\%Module%.dproj;.\%Module%\%OptConfig%\%OptPlatform%\%Module%.exe --el_config=.\PARTAGE\_EurekaLog\7_5_MemLeaks.eof || GOTO error
 		) ELSE (
-			%Eurekalog% --el_nostats --el_alter_exe=.\%Module%\%Module%.dproj;.\_Executables\%Module%\%Module%.exe --el_config=.\%Module%\%Module%.eof || GOTO error
+			%Eurekalog% --el_nostats --el_alter_exe=.\%Module%\%Module%.dproj;.\%Module%\%OptConfig%\%OptPlatform%\%Module%.exe --el_config=.\%Module%\%Module%.eof || GOTO error
 		)
 	)
 	rem post compilation avec AsPack (compression des executables)
@@ -142,7 +142,7 @@ goto :init
 		REM /U  Compress files in sub-directories
 		REM /X  Export compression
 		echo #### Aspack
-		%Aspack% .\_Executables\%Module%\%Module%.exe /R+ /D+ /B+ /S || GOTO error
+		%Aspack% .\%Module%\%OptConfig%\%OptPlatform%\%Module%.exe /R+ /D+ /B+ /S || GOTO error
 	)
 	
 	call :cleanup

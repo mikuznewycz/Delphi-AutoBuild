@@ -18,7 +18,14 @@ Simple file to build delphi project with CI/CD systems or build without open the
 
 > set Aspack="C:\Program Files (x86)\Aspack\Aspack.exe"
    
-# How to use it 
+# HUSAGE:
+  AutoBuild.bat [flags] "Module"
 
+  /?, --help              shows this help
+  /v, --version           shows the version
+  /a, --aspack            Compress Module with Aspack
+  --config=Config         Choose configuration (Release, Debug, ...)
+  --platform=Platform     Choose platform (Win32, Win64, ...)
 
- 
+ Example : AutoBuild.bat --config=Debug --platform=Win64 TestApp1
+ Example : AutoBuild.bat --config=Debug --platform=Win32 TestApp1
