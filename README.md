@@ -17,13 +17,13 @@ Simple bat file to build a delphi project with CI/CD systems or build without op
 
 > set Aspack="C:\Program Files (x86)\Aspack\Aspack.exe"
    
-# Use 
+# How to use it
 
 .\AutoBuild.bat [flags] "AppName" (name of the application)
 
 - / ?, --help displays this help
 - /v, --version displays the version
-- /a, --aspack Compress the module with Aspack
+- /a, --aspack Compress the module with Aspack.
 --config=Config Choose the configuration (Release, Debug, ...)
 --platform=Platform Choose the platform (Win32, Win64, ...)
 
