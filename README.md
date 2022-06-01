@@ -23,29 +23,31 @@ Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou 
 
 # Options
 
-- Afficher l'aide
+Afficher l'aide
 > /?, --help                    
 
-- Afficher la version
+Afficher la version
 > /v, --version                 
 
-- Utilser Aspack pour compresser l'executable
+Utilser Aspack pour compresser l'executable
 > /a, --aspack                  
 
-- Choisir la configuration (Release, Debug, ...)
+Choisir la configuration (Release, Debug, ...)
 > --config=Config                 
 
-- Choisir la plate-forme (Win32, Win64, ...)
+Choisir la plate-forme (Win32, Win64, ...)
 > --platform=Platform             
 
 
 # Exemples 
 
-.\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
+Pour compiler notre application test en Debug / Win32
+> .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
 
 ![cette image ne sera pas affichée](img/BuildWin32.png)
 
-.\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
+Pour compiler notre application test en Release / Win64
+> .\AutoBuild.bat --config=Release --platform=Win64 TestApp1
 
 ![cette image ne sera pas affichée](img/BuildWin64.png)
 
