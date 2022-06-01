@@ -1,7 +1,7 @@
 # Delphi-AutoBuild
 Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou construire sans ouvrir l'IDE.
 
-# Init 
+# Configuration 
 
 1 - Définissez la variable rsvars avec le chemin de votre version de Delphi.
    
