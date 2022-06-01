@@ -106,7 +106,6 @@ goto :init
 	echo #### %__NAME% v%__VERSION% "%Module%" (Config=%OptConfig%, Platform=%OptPlatform%, Aspack=%OptAspack%)
 		
 	IF not defined BDS (call %rsvars%)
-	echo %BDS%
 	
 	rem compilation des fichiers de ressources .res avec les fichiers .rc
 	IF EXIST .\%Module%\Ressources.rc (
