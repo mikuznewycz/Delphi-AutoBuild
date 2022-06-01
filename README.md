@@ -34,3 +34,9 @@ Simple file to build delphi project with CI/CD systems or build without open the
 .\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
 
 .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
+
+
+# Conclusion 
+
+Now you can use this batch to build executable with CI/CD tool (Jenkins, ...) 
+
