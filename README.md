@@ -20,15 +20,17 @@ Simple file to build delphi project with CI/CD systems or build without open the
    
 # Usage 
 
-> .\AutoBuild.bat [flags] "AppName"
->- /?, --help              shows this help
->- /v, --version           shows the version
->- /a, --aspack            Compress Module with Aspack
->- --config=Config         Choose configuration (Release, Debug, ...)
->- --platform=Platform     Choose platform (Win32, Win64, ...)
->
+.\AutoBuild.bat [flags] "AppName"
 
-> #### Examples : 
->.\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
->
->.\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
+- /?, --help              shows this help
+- /v, --version           shows the version
+- /a, --aspack            Compress Module with Aspack
+- --config=Config         Choose configuration (Release, Debug, ...)
+- --platform=Platform     Choose platform (Win32, Win64, ...)
+
+
+# Examples 
+
+.\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
+
+.\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
