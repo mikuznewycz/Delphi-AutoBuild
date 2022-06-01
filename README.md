@@ -1,5 +1,5 @@
 # DelphiAutoBuild
-Simple file to build delphi project with CI/CD systems
+Simple file to build delphi project with CI/CD systems or build without open the IDE.
 
 
 # Init 
