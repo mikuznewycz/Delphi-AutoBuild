@@ -1,32 +1,31 @@
 # DelphiAutoBuild
-Simple file to build delphi project with CI/CD systems or build without open the IDE.
-
+Simple bat file to build a delphi project with CI/CD systems or build without opening the IDE.
 
 # Init 
 
-1 - Set the rsvars variable with the path of your version of Delphi
+1 - Set the variable rsvars with the path of your Delphi version.
    
    For Delphi 10.4 
 > set rsvars="C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\rsvars.bat"
    
-2 - if you are using Eurekalog, you can set "eurekalog" path 
+2 - if you use Eurekalog, you can set the path "eurekalog" in the batch file.
 
 > set Eurekalog="C:\Program Files (x86)\Neos Eureka S.r.l\EurekaLog 7\Packages\Studio23\ecc32.exe" 	
 
 
-3 - if you are using Aspack to compress executables, you can set "aspack" path
+3 - If you use Aspack to compress the executables, you can set the path "aspack" in the batch file.
 
 > set Aspack="C:\Program Files (x86)\Aspack\Aspack.exe"
    
-# Usage 
+# Use 
 
-.\AutoBuild.bat [flags] "AppName"
+.\AutoBuild.bat [flags] "AppName" (name of the application)
 
-- /?, --help              shows this help
-- /v, --version           shows the version
-- /a, --aspack            Compress Module with Aspack
-- --config=Config         Choose configuration (Release, Debug, ...)
-- --platform=Platform     Choose platform (Win32, Win64, ...)
+- / ?, --help displays this help
+- /v, --version displays the version
+- /a, --aspack Compress the module with Aspack
+--config=Config Choose the configuration (Release, Debug, ...)
+--platform=Platform Choose the platform (Win32, Win64, ...)
 
 
 # Examples 
@@ -42,9 +41,9 @@ Simple file to build delphi project with CI/CD systems or build without open the
 
 # Links  
 
-[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Eurekalog Home Page")
+[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Eurekalog home page")
 
-[Eurekalog](https://www.eurekalog.com/ "Eurekalog Home Page")
+[Eurekalog](https://www.eurekalog.com/ "Eurekalog home page")
 
 [Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
 
