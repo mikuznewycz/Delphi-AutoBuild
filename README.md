@@ -54,7 +54,7 @@ Pour compiler notre application test en Release / Win64
 
 # Liens  
 
-[link](url){:target="_blank"}
+[link](url?target=_blank)
 
 [Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog"){:target="_blank"}
 
