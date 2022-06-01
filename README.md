@@ -54,10 +54,10 @@ Pour compiler notre application test en Release / Win64
 
 # Liens  
 
-[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog")
+[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog"){:target="_blank"}
 
-[Eurekalog](https://www.eurekalog.com/ "Page d'accueil d'Eurekalog")
+[Eurekalog](https://www.eurekalog.com/ "Page d'accueil d'Eurekalog"){:target="_blank"}
 
-[Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
+[Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page"){:target="_blank"}
 
-[Jenkins](https://www.jenkins.io/ "Page d'accueil de Jenkins")
+[Jenkins](https://www.jenkins.io/ "Page d'accueil de Jenkins"){:target="_blank"}
