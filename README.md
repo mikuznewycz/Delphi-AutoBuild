@@ -79,7 +79,7 @@ Renseigner **la/les commande(s) à éxécuter**
 
 ![JenkinsJob4](img/JenkinsJob4.png)
 
-(Optionnel) Ajouter une **action à la suite du build** pour **archiver les artefacts**  (fichiers exécutables compilés à la suite du build)
+(Optionnel) Ajouter une **action à la suite du build** pour **archiver les artefacts**  (fichiers que l'on souhaite conserver / deployer à la suite du build)
 
 ![JenkinsJob6](img/JenkinsJob6.png)
 
