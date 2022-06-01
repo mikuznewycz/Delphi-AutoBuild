@@ -6,8 +6,8 @@
         <MainSource>TestApp1.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <TargetedPlatforms>1</TargetedPlatforms>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -34,6 +34,12 @@
         <Cfg_1>true</Cfg_1>
         <Base>true</Base>
     </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
         <Cfg_2>true</Cfg_2>
         <CfgParent>Base</CfgParent>
@@ -41,6 +47,12 @@
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
         <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
         <CfgParent>Cfg_2</CfgParent>
         <Cfg_2>true</Cfg_2>
         <Base>true</Base>
@@ -69,6 +81,12 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;dxFlowChartRS26;dxPSdxMapControlLnkRS26;DBXInterBaseDriver;vclactnband;dxBarRS26;vclFireDAC;dxPScxExtCommonRS26;dxFireDACEMFRS26;tethering;dxSpreadSheetInplaceRichEditRS26;FireDACADSDriver;dxRichEditCoreRS26;dxPSdxSpreadSheetLnkRS26;dxRichEditControlRS26;dxGaugeControlRS26;vcltouch;dxorgcRS26;dxPScxVGridLnkRS26;vcldb;bindcompfmx;inetdb;dxBarDBNavRS26;dxDBXServerModeRS26;dxGDIPlusRS26;fmx;FireDACIBDriver;fmxdae;dxServerModeRS26;dxWizardControlRS26;dxCloudServiceLibraryRS26;dxPSdxFCLnkRS26;dxTabbedMDIRS26;dxPSLnksRS26;dxEMFRS26;dbexpress;IndyCore;cxGridRS26;dxComnRS26;dxPDFViewerRS26;vclx;dxPsPrVwAdvRS26;dxPScxTLLnkRS26;dsnap;FireDACCommon;RESTBackendComponents;cxSchedulerTreeBrowserRS26;dxADOServerModeRS26;VCLRESTComponents;soapserver;cxPivotGridOLAPRS26;cxVerticalGridRS26;vclie;dxtrmdRS26;bindengine;DBXMySQLDriver;CloudService;dxmdsRS26;FireDACMySQLDriver;cxSchedulerRS26;cxSchedulerWebServiceStorageRS26;dxPSdxLCLnkRS26;dxdborRS26;FireDACCommonODBC;FireDACCommonDriver;dxMapControlRS26;inet;dxSpellCheckerRS26;dxFireDACServerModeRS26;IndyIPCommon;bindcompdbx;dxSpreadSheetCoreConditionalFormattingDialogsRS26;vcl;IndyIPServer;dxPSdxDBOCLnkRS26;cxPivotGridRS26;IndySystem;dxSpreadSheetReportDesignerRS26;cxTreeListdxBarPopupMenuRS26;dsnapcon;cxTreeListRS26;dxPScxPCProdRS26;dxPScxPivotGridLnkRS26;cxSchedulerRibbonStyleEventEditorRS26;dxPSCoreRS26;dxNavBarRS26;FireDACMSAccDriver;fmxFireDAC;dxCoreRS26;vclimg;dxSpreadSheetRS26;cxExportRS26;FireDAC;dxHttpIndyRequestRS26;dxBarExtItemsRS26;dxPSdxGaugeControlLnkRS26;dxPSPrVwRibbonRS26;FireDACSqliteDriver;FireDACPgDriver;dxPSRichEditControlLnkRS26;cxPivotGridChartRS26;dxdbtrRS26;dxRichEditControlCoreRS26;soaprtl;DbxCommonDriver;dxFlowChartAdvancedCustomizeFormRS26;dxDockingRS26;xmlrtl;soapmidas;dxPSdxDBTVLnkRS26;fmxobj;vclwinx;cxLibraryRS26;rtl;DbxClientDriver;dxTileControlRS26;dxSkinsCoreRS26;CustomIPTransport;vcldsnap;dxPScxSchedulerLnkRS26;dxSpreadSheetConditionalFormattingDialogsRS26;bindcomp;appanalytics;dxPSdxOCLnkRS26;dxRibbonCustomizationFormRS26;cxSchedulerGridRS26;IndyIPClient;bindcompvcl;dxADOEMFRS26;dbxcds;VclSmp;adortl;dxRibbonRS26;dxPScxCommonRS26;dxRichEditDocumentModelRS26;dxSpreadSheetCoreDialogsRS26;dxBarExtDBItemsRS26;dsnapxml;dbrtl;IndyProtocols;inetdbxpress;dxPSdxPDFViewerLnkRS26;dxRichEditInplaceRS26;dxPScxGridLnkRS26;dxFlowChartDesignerRS26;dxSpreadSheetCoreRS26;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
@@ -83,6 +101,10 @@
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
     </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
@@ -90,6 +112,10 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
     </PropertyGroup>
@@ -991,7 +1017,7 @@
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>
-                <Platform value="Win64">False</Platform>
+                <Platform value="Win64">True</Platform>
             </Platforms>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
