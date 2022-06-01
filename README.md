@@ -52,6 +52,18 @@ Pour compiler notre application test en Release / Win64
 ![cette image ne sera pas affichée](img/BuildWin64.png)
 
 
+# configurer un job pour compiler automatiquement les exécutables 
+
+
+Créer un nouveau job **Freestyle** dans Jenkins 
+
+![cette image ne sera pas affichée](JenkinsJob.png)
+
+Dans la partie **Gestion de code source**, sélectionner **Git**, et sélectionner/enregistrer vos identifiants dans **Credentials**
+
+![cette image ne sera pas affichée](JenkinsJob2.png)
+
+
 # Liens  
 
 [Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog")
