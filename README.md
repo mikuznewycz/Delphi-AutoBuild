@@ -19,7 +19,7 @@ Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou 
    
 # Comment l'utiliser
 
-> .\AutoBuild.bat [flags] "AppName"
+> .\AutoBuild.bat [options] "AppName"
 
 # Options
 
