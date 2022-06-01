@@ -1,5 +1,5 @@
 # Delphi-AutoBuild
-Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou construire sans ouvrir l'IDE.
+Fichier bat pour construire des projets Delphi sans ouvrir l'IDE (cmd ou powershell), ou avec des outils de CI/CD (jenkins par exemple).
 
 
 [Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog")
@@ -30,7 +30,7 @@ Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou 
 
 > .\AutoBuild.bat [options] "AppName"
 
-# Options
+## Options
 
 Afficher l'aide
 > /?, --help                    
@@ -62,7 +62,6 @@ Pour compiler notre application test en Release / Win64
 
 
 # Méthode automatique : via un job jenkins 
-
 
 Créer un nouveau job **Freestyle** dans Jenkins 
 
