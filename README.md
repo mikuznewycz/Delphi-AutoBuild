@@ -10,7 +10,7 @@ Fichier bat pour construire des projets Delphi sans ouvrir l'IDE (cmd ou powersh
 
 [Jenkins](https://www.jenkins.io/ "Page d'accueil de Jenkins")
 
-# Configuration 
+## Configuration 
 
 1 - Définissez la variable rsvars avec le chemin de votre version de Delphi.
    
@@ -26,11 +26,11 @@ Fichier bat pour construire des projets Delphi sans ouvrir l'IDE (cmd ou powersh
 
 > set Aspack="C:\Program Files (x86)\Aspack\Aspack.exe"
    
-# Comment l'utiliser
+## Comment l'utiliser ?
 
 > .\AutoBuild.bat [options] "AppName"
 
-## Options
+### Options
 
 Afficher l'aide
 > /?, --help                    
@@ -48,7 +48,7 @@ Choisir la plate-forme (Win32, Win64, ...)
 > --platform=Platform             
 
 
-## Via cmd ou powershell  
+### Via cmd ou powershell  
 
 Pour compiler notre application test en Debug / Win32
 > .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
@@ -61,7 +61,7 @@ Pour compiler notre application test en Release / Win64
 ![cette image ne sera pas affichée](img/BuildWin64.png)
 
 
-## Via un job jenkins 
+### Via un job jenkins 
 
 Créer un nouveau job **Freestyle** dans Jenkins 
 
