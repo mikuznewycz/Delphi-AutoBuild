@@ -62,6 +62,7 @@ goto :init
     set "OptConfig=Release"
     set "OptPlatform=Win32"
 	
+	set rsvars="C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\rsvars.bat"
 	set Eurekalog="C:\Program Files (x86)\Neos Eureka S.r.l\EurekaLog 7\Packages\Studio23\ecc32.exe"
 
 	set "OptAspack=no"
@@ -104,7 +105,7 @@ goto :init
 	cd "%~dp0"
 	echo #### %__NAME% v%__VERSION% "%Module%" (Config=%OptConfig%, Platform=%OptPlatform%, Aspack=%OptAspack%)
 		
-	IF not defined BDS (call "C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\rsvars.bat")
+	IF not defined BDS (call %rsvars%)
 	rem compilation des fichiers de ressources .res avec les fichiers .rc
 	IF EXIST .\%Module%\Ressources.rc (
 		echo #### BRCC32
