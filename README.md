@@ -88,9 +88,14 @@ Après avoir sauvergarder la configuration du job, **lancer un build**
 
 ![JenkinsJob5](img/JenkinsJob5.png)
 
-Et voilà ! ;-) 
+Et voilà ! ;-) le projet a été compilé sans ouvrir Delphi.
 
 ![JenkinsJob7](img/JenkinsJob7.png)
 
+Si besoin, il est possible d'ajouter d'autres étapes au job pour :
+- envoyer des mails ,
+- manipuler les fichiers ,
+- déployer les fichiers sur certains serveurs,
+- ect... à vous de faire travailler votre imagination
 
 Enjoy
