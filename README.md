@@ -1,6 +1,15 @@
 # Delphi-AutoBuild
 Fichier bat simple pour construire un projet delphi avec les systèmes CI/CD ou construire sans ouvrir l'IDE.
 
+
+[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog")
+
+[Eurekalog](https://www.eurekalog.com/ "Page d'accueil d'Eurekalog")
+
+[Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
+
+[Jenkins](https://www.jenkins.io/ "Page d'accueil de Jenkins")
+
 # Configuration 
 
 1 - Définissez la variable rsvars avec le chemin de votre version de Delphi.
@@ -84,12 +93,4 @@ Et voilà ! ;-)
 ![JenkinsJob7](img/JenkinsJob7.png)
 
 
-# Liens  
-
-[Delphi](https://www.embarcadero.com/fr/products/delphi/ "Page d'accueil d'Eurekalog")
-
-[Eurekalog](https://www.eurekalog.com/ "Page d'accueil d'Eurekalog")
-
-[Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
-
-[Jenkins](https://www.jenkins.io/ "Page d'accueil de Jenkins")
+Enjoy
