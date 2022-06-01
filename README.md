@@ -48,7 +48,7 @@ Choisir la plate-forme (Win32, Win64, ...)
 > --platform=Platform             
 
 
-# Méthode manuelle : via cmd ou powershell  
+## Via cmd ou powershell  
 
 Pour compiler notre application test en Debug / Win32
 > .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
@@ -61,7 +61,7 @@ Pour compiler notre application test en Release / Win64
 ![cette image ne sera pas affichée](img/BuildWin64.png)
 
 
-# Méthode automatique : via un job jenkins 
+## Via un job jenkins 
 
 Créer un nouveau job **Freestyle** dans Jenkins 
 
