@@ -39,7 +39,7 @@ Choisir la plate-forme (Win32, Win64, ...)
 > --platform=Platform             
 
 
-# Exemples 
+# Méthode manuelle : via cmd ou powershell  
 
 Pour compiler notre application test en Debug / Win32
 > .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
@@ -52,7 +52,7 @@ Pour compiler notre application test en Release / Win64
 ![cette image ne sera pas affichée](img/BuildWin64.png)
 
 
-# configurer un job pour compiler automatiquement les exécutables 
+# Méthode automatique : via un job jenkins 
 
 
 Créer un nouveau job **Freestyle** dans Jenkins 
@@ -63,13 +63,23 @@ Dans la partie **Gestion de code source**, sélectionner **Git**, et sélectionn
 
 ![JenkinsJob2](img/JenkinsJob2.png)
 
+Ensuite **ajouter une étape au build** en choisissant **Executer une ligne de commande batch windows**
+
 ![JenkinsJob3](img/JenkinsJob3.png)
+
+Renseigner **la/les commande(s) à éxécuter**
 
 ![JenkinsJob4](img/JenkinsJob4.png)
 
-![JenkinsJob5](img/JenkinsJob5.png)
+(Optionnel) Ajouter une **action à la suite du build** pour **archiver les artefacts**  (fichiers exécutables compilés à la suite du build)
 
 ![JenkinsJob6](img/JenkinsJob6.png)
+
+Après avoir sauvergarder la configuration du job, **lancer un build** 
+
+![JenkinsJob5](img/JenkinsJob5.png)
+
+Et voilà ! ;-) 
 
 ![JenkinsJob7](img/JenkinsJob7.png)
 
