@@ -42,4 +42,4 @@ Now you can use this batch to build executable with CI/CD tool (Jenkins, ...)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_MXtbjwsz3A/0.jpg)](https://www.youtube.com/watch?v=_MXtbjwsz3A&t=6s)
 
-[see Jenkins Home Pages](https://www.jenkins.io/ "Jenkins Home Page")
+[see Jenkins home page](https://www.jenkins.io/ "Jenkins Home Page")
