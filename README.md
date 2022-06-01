@@ -49,5 +49,3 @@ Simple file to build delphi project with CI/CD systems or build without open the
 [Aspack Win32 EXE file packing](http://www.aspack.com/aspack.html/ "Aspack Home Page")
 
 [Jenkins](https://www.jenkins.io/ "Jenkins Home Page")
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_MXtbjwsz3A/0.jpg)](https://www.youtube.com/watch?v=_MXtbjwsz3A&t=6s)
