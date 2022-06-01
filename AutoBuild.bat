@@ -151,9 +151,11 @@ goto :init
 
 :error
 	echo #### Exit with ERRORLEVEL %ERRORLEVEL%
+	call :cleanup
 	Exit /b %ERRORLEVEL% 
 
 :end
+	call :cleanup
 	exit /b 0
 
 :cleanup
