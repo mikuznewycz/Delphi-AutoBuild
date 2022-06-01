@@ -31,10 +31,13 @@ Simple file to build delphi project with CI/CD systems or build without open the
 
 # Examples 
 
-.\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
-![this image will not be displayed](.\img\BuildWin64.png)
 .\AutoBuild.bat --config=Debug --platform=Win32 TestApp1
-![this image will not be displayed](.\img\BuildWin32.png)
+
+![this image will not be displayed](img/BuildWin32.png)
+
+.\AutoBuild.bat --config=Debug --platform=Win64 TestApp1
+
+![this image will not be displayed](img/BuildWin64.png)
 
 
 # Conclusion 
