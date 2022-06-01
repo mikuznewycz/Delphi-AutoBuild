@@ -57,11 +57,21 @@ Pour compiler notre application test en Release / Win64
 
 Créer un nouveau job **Freestyle** dans Jenkins 
 
-![cette image ne sera pas affichée](JenkinsJob.png)
+![JenkinsJob](img/JenkinsJob.png)
 
 Dans la partie **Gestion de code source**, sélectionner **Git**, et sélectionner/enregistrer vos identifiants dans **Credentials**
 
-![cette image ne sera pas affichée](JenkinsJob2.png)
+![JenkinsJob2](img/JenkinsJob2.png)
+
+![JenkinsJob3](img/JenkinsJob3.png)
+
+![JenkinsJob4](img/JenkinsJob4.png)
+
+![JenkinsJob5](img/JenkinsJob5.png)
+
+![JenkinsJob6](img/JenkinsJob6.png)
+
+![JenkinsJob7](img/JenkinsJob7.png)
 
 
 # Liens  
